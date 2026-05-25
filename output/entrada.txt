@@ -1,0 +1,4 @@
+Hola!
+Esta es mi primera vez leyendo un archivo en c++
+Quiero leer cada línea de este archivo
+Y que cada uno aparezca por consola

@@ -1,17 +1,18 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
 using namespace std;
 
 int main(){
-	int x;
-	cout<<"Ingrese un numero: ";
-	cin >> x;
+ifstream entrada("input/entrada.txt");
+	cout<<"Abriendo archivo"<<endl;
+	if (entrada.is_open()) {
+	  cout<<"Archivo abierto"<<endl;
 	
-	if(x%2 == 0){
-		cout << x << " es par"; 
-	} else {
-		cout << x << " Es impar";
+	  char c;
+	
+	  while (entrada.get(c)) {
+	    cout << c;
+	  }
 	}
-	
-	
-	return 0;
 }
